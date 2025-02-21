@@ -70,7 +70,7 @@ body::-webkit-scrollbar{
  flex-direction: column;
  text-align: center;
  align-items: center;
- width: 25vw;
+ width: 24vw;
  height: 60vh;
  padding: 2rem 2.5rem;
  border-radius: 2rem;
@@ -127,7 +127,7 @@ body::-webkit-scrollbar{
  flex-direction: column;
  justify-content: space-evenly;
  padding: 1.5rem 2rem;
- width: 25vw;
+ width: 24vw;
  height: 60vh;
 }
 
