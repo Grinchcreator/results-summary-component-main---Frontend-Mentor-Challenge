@@ -56,8 +56,8 @@ body::-webkit-scrollbar{
  margin: auto;
  align-items: center;
  justify-content: center;
- width: 60vw;
- height: 40vh;
+ width: 40vw;
+ height: 60vh;
  box-shadow: var(--PaleBlue) 0px 10px 100px, var(--PaleBlue) 0px 10px 20px;
  border-radius: 2rem;
  background-color: var(--White);
@@ -74,7 +74,7 @@ body::-webkit-scrollbar{
  text-align: center;
  align-items: center;
  width: 50%;
- height: 40vh;
+ height: 60vh;
  padding: 2rem 2.5rem;
  border-radius: 2rem;
  justify-content: space-between;
@@ -131,7 +131,7 @@ body::-webkit-scrollbar{
  justify-content: space-evenly;
  padding: 1.5rem 2rem;
  width: 50%;
- height: 40vh;
+ height: 60vh;
 }
 
 .header_2{
