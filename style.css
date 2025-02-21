@@ -1,0 +1,263 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+/*colors*/
+:root{
+
+/*primary*/
+--LightRed: hsl(0, 100%, 67%);
+--OrangeyYellow: hsl(39, 100%, 56%);
+--GreenTeal: hsl(166, 100%, 37%);
+--CobaltBlue: hsl(234, 85%, 45%);
+
+/*gradients*/
+--LightSlateBlue /*(background)*/: hsl(252, 100%, 67%);
+--LightRoyalBlue /*(background)*/: hsl(241, 81%, 54%);
+--VioletBlue /*(circle)*/: hsla(256, 72%, 46%, 1);
+--PersianBlue /*(circle)*/: hsla(241, 72%, 46%, 0);
+
+/*neutral*/
+--White: hsl(0, 0%, 100%);
+--PaleBlue: hsl(221, 100%, 96%);
+--LightLavender: hsl(241, 100%, 89%);
+--DarkGrayBlue: hsl(224, 30%, 27%); 
+}
+
+/** Reset **/
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+}
+
+* {
+ padding: 0;
+ margin: 0;
+}
+
+body{
+ font-family: 'Hanken Grotesk', sans-serif;
+ display: grid;
+ align-items: center;
+ min-height: 100vh;
+ min-width: 100vw;
+ text-rendering: optimizeSpeed;
+ line-height: 1.5;
+ background-color: var(--White);
+ font-size: 18px; /*paragraphs*/
+}
+
+body::-webkit-scrollbar{
+ display: none;
+}
+
+.main{
+ display: flex;
+ margin: auto;
+ align-items: center;
+ justify-content: center;
+ width: 40vw;
+ height: 60vh;
+ box-shadow: var(--PaleBlue) 0px 10px 100px, var(--PaleBlue) 0px 10px 20px;
+ border-radius: 2rem;
+ background-color: var(--White);
+}
+
+.container_1{
+ background: linear-gradient(
+    to bottom,
+    var(--LightSlateBlue),
+    var(--LightRoyalBlue)
+  );
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ align-items: center;
+ width: 50%;
+ height: 60vh;
+ padding: 2rem 2.5rem;
+ border-radius: 2rem;
+ justify-content: space-between;
+}
+
+.header_1{
+ color: var(--LightLavender);
+}
+
+.header_1 h1{
+ font-size: 1.3rem;
+}
+
+.circle{
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+ width: 150px;
+ height: 150px;
+ border-radius: 50%;
+ background: linear-gradient(
+   to bottom,
+   var(--VioletBlue),
+   var(--PersianBlue)
+    );
+}
+
+.circle h1{
+ font-size: 4rem;
+}
+
+.text-area-1{
+ color: var(--White);
+}
+
+.text-area-2{
+ color: var(--LightSlateBlue);
+}
+
+.text-area-3 h1{
+ color: var(--White);
+}
+
+.text-area-3 p{
+ color: var(--LightLavender);
+ font-size: 1rem;
+}
+
+.container_2{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ padding: 1.5rem 2rem;
+ width: 50%;
+ height: 60vh;
+}
+
+.header_2{
+ color: var(--DarkGrayBlue);
+}
+
+.header_2 h1{
+ font-size: 1.3rem;
+ font-weight: 800;
+}
+
+.list{
+ display: flex;
+ flex-direction: column;
+ gap: 0.8rem;
+}
+
+.reaction, .memory, .verbal, .visual{
+ display: flex;
+ justify-items: center;
+ justify-content: space-between;
+ padding: 0.7rem 0.5rem;
+ border-radius: 10px;
+ font-size: 0.9rem;
+ font-weight: 700;
+}
+
+.list-name{
+ margin-right: 5rem;
+}
+
+.reaction{
+ display: flex;
+ color: var(--LightRed);
+ background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.memory{
+ display: flex;
+ color: var(--OrangeyYellow);
+ background-color: hsla(39, 100%, 56%, 0.1);;
+}
+
+.verbal{
+ display: flex;
+ color: var(--GreenTeal);
+ background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.visual{
+ display: flex;
+ color: var(--CobaltBlue);
+ background-color: hsla(234, 85%, 45%, 0.1);;
+}
+
+.list .score{
+ color: var(--DarkGrayBlue);
+}
+
+.list .hundred{
+ color: gray;
+}
+
+.button{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.continue-button{
+ margin-top: auto;
+ padding: 0.8rem 5.5rem ;
+ border: none;
+ border-radius: 2rem;
+ background: var(--DarkGrayBlue);
+ cursor: pointer;
+ font-size: 1rem;
+ color: white;
+}
+
+.continue-button:hover{
+background: linear-gradient(
+  to bottom,
+  var(--LightSlateBlue),
+  var(--LightRoyalBlue)
+);
+}
+
+@media screen and (max-width: 650px) {
+  body{
+    justify-content: center;
+    font-size: 14px;
+  }
+  .main{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   box-shadow: none;
+   width: 100vw;
+   height: 100vh;
+   border-radius: 0%;
+  }
+  .header_1 h1{
+    font-size: 1rem;
+  }
+  .circle{
+   width: 120px;
+   height: 120px;
+  }
+  .circle h1{
+   font-size: 3rem;
+  }
+  .container_1{
+   min-width: 100vw;
+   padding: 1rem 2.5rem;
+   border-radius: 0 0 2rem 2rem;
+  }
+  .container_2{
+   min-width: 100vw;
+   min-height: 60vh;
+  }
+  .continue-button{
+   padding: 0.8rem 8rem;
+  }
+  .list-name{
+   margin-right: 7rem;
+  }
+  }
